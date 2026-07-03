@@ -1,0 +1,366 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="وب‌سایت سه‌بعدی مینیمال مامایی، وبلاگ سلامت مادر و فروش دوره درمان مشکل ناباروری با دکتر ارشدی زاده." />
+  <title>کلینیک مامایی آرشیدا | وبلاگ سلامت مادر و دوره ناباروری</title>
+  <link rel="stylesheet" href="./css/styles.css" />
+</head>
+<body>
+  <!-- بخش نوار پیشرفت اسکرول سایت -->
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+  <!-- بخش پیام دسترسی‌پذیری برای پرش به محتوا -->
+  <a class="skip-link" href="#mainContent">رفتن به محتوای اصلی</a>
+
+  <!-- بخش هدر و منوی اصلی سایت -->
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <!-- بخش لوگو: نام و توضیح کوتاه برند مامایی -->
+      <a class="brand" href="#home" aria-label="خانه کلینیک مامایی آرشیدا">
+        <span class="brand-mark" aria-hidden="true">آ</span>
+        <span class="brand-text">
+          <strong>کلینیک مامایی آرشیدا</strong>
+          <small>مراقبت مادر، آموزش و امید</small>
+        </span>
+      </a>
+
+      <!-- دکمه منوی موبایل -->
+      <button class="nav-toggle" id="navToggle" type="button" aria-label="باز و بسته کردن منو" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <!-- بخش لینک‌های ناوبری سایت -->
+      <nav class="main-nav" id="mainNav" aria-label="منوی اصلی">
+        <a href="#about">درباره</a>
+        <a href="#degrees">مدارک خارجی</a>
+        <a href="#blog">وبلاگ بیماری‌ها</a>
+        <a href="#course">دوره ناباروری</a>
+        <a href="#contact">تماس</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="mainContent">
+    <!-- بخش هیرو/معرفی اصلی سایت: پس‌زمینه سه‌بعدی با Three.js ساخته می‌شود -->
+    <section class="hero section" id="home" aria-label="معرفی کلینیک مامایی">
+      <canvas id="threeHero" class="hero-canvas" aria-hidden="true"></canvas>
+      <div class="hero-orb hero-orb-one" aria-hidden="true"></div>
+      <div class="hero-orb hero-orb-two" aria-hidden="true"></div>
+
+      <div class="container hero-grid">
+        <!-- بخش متن اصلی هیرو -->
+        <div class="hero-copy reveal">
+          <div class="eyebrow">وب‌سایت سه‌بعدی مینیمال مامایی</div>
+          <h1>مراقبت علمی از مادر، آموزش کاربردی و مسیر امید برای باروری</h1>
+          <p>
+            یک وبلاگ تخصصی و قابل ویرایش برای خواهر شما؛ شامل مدارک و تخصص‌های مطرح مامایی در خارج از کشور،
+            مطالب بیماری‌ها و راهکارهای درمانی ایمن، و معرفی دوره «درمان مشکل ناباروری با دکتر ارشدی زاده».
+          </p>
+
+          <!-- بخش دکمه‌های دعوت به اقدام -->
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#course">مشاهده دوره ناباروری</a>
+            <a class="btn btn-ghost" href="#blog">خواندن وبلاگ</a>
+          </div>
+
+          <!-- بخش آمار کوتاه سایت -->
+          <div class="mini-stats" aria-label="آمار کلیدی">
+            <div class="stat-card">
+              <strong data-counter="18">0</strong>
+              <span>موضوع آموزشی</span>
+            </div>
+            <div class="stat-card">
+              <strong data-counter="7">0</strong>
+              <span>مسیر تخصصی جهانی</span>
+            </div>
+            <div class="stat-card">
+              <strong data-counter="24">0</strong>
+              <span>ساعت پشتیبانی دوره</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- بخش تصویر هیرو: تصویر AI ساخته‌شده برای UI/UX -->
+        <div class="hero-visual reveal" data-delay="120">
+          <div class="image-frame">
+            <img src="./assets/images/hero-midwife.png" alt="تصویر هوش مصنوعی از ماما در فضای کلینیک مدرن" />
+          </div>
+          <div class="floating-note note-top">
+            <span class="pulse-dot"></span>
+            مشاوره مادر و جنین
+          </div>
+          <div class="floating-note note-bottom">
+            مسیر درمان، مرحله‌به‌مرحله
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- بخش نوار اعتماد و معرفی ویژگی‌های سریع -->
+    <section class="trust-strip" aria-label="ویژگی‌های کلیدی سایت">
+      <div class="container trust-grid">
+        <div class="trust-item"><span>01</span> محتوای قابل ویرایش در فایل JS</div>
+        <div class="trust-item"><span>02</span> Three.js برای هیرو سه‌بعدی</div>
+        <div class="trust-item"><span>03</span> Babylon.js برای صحنه مدارک</div>
+        <div class="trust-item"><span>04</span> آماده اتصال به مدل‌های Blender/Unity</div>
+      </div>
+    </section>
+
+    <!-- بخش درباره کلینیک و شخصیت برند -->
+    <section class="section about" id="about">
+      <div class="container split-grid">
+        <div class="section-copy reveal">
+          <div class="section-kicker">درباره خواهر شما</div>
+          <h2>یک برند آرام، علمی و انسانی برای مامایی مدرن</h2>
+          <p>
+            این قالب برای معرفی خدمات مامایی، آموزش مادران، مدیریت محتوای وبلاگ و فروش دوره آموزشی طراحی شده است.
+            تمام بخش‌ها با <strong>div</strong> ساخته شده‌اند، در موبایل و دسکتاپ واکنش‌گرا هستند و در کدها کامنت فارسی دارند.
+          </p>
+          <div class="feature-list">
+            <div class="feature-item">مناسب برای مقاله‌های سلامت بارداری و باروری</div>
+            <div class="feature-item">طراحی مینیمال با رنگ‌های آرامش‌بخش پزشکی</div>
+            <div class="feature-item">قابل تغییر از طریق آرایه‌های ابتدای فایل <code>js/app.js</code></div>
+          </div>
+        </div>
+
+        <!-- بخش تصویر/کارت درباره -->
+        <div class="about-card reveal" data-delay="100">
+          <img src="./assets/images/blog-maternal-health.png" alt="تصویر هوش مصنوعی برای وبلاگ سلامت مادر" />
+          <div class="about-card-content">
+            <strong>یادداشت پزشکی مهم</strong>
+            <p>
+              مطالب این سایت آموزشی هستند و جایگزین معاینه، نسخه یا تشخیص پزشک و ماما نیستند.
+              در علائم خطر باید فوراً به مرکز درمانی مراجعه شود.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- بخش مدارک و تخصص‌های مطرح مامایی خارج از کشور -->
+    <section class="section degrees" id="degrees">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div class="section-kicker">مدارک و تخصص‌های جهانی</div>
+          <h2>مسیرهای معتبر مامایی در خارج از کشور</h2>
+          <p>
+            این کارت‌ها از داخل فایل <code>js/app.js</code> قابل ویرایش‌اند. می‌توانید نام مدرک، توضیح و برچسب هر مورد را عوض کنید.
+          </p>
+        </div>
+
+        <!-- بخش کارت‌های مدارک: با JavaScript از آرایه CERTIFICATES ساخته می‌شود -->
+        <div class="cards-grid" id="certCards" aria-live="polite"></div>
+
+        <!-- بخش سه‌بعدی Babylon.js برای نمایش مفهومی مدارک بین‌المللی -->
+        <div class="lab-3d reveal">
+          <div class="lab-copy">
+            <span class="section-kicker">Babylon.js 3D Lab</span>
+            <h3>صحنه سه‌بعدی مدارک بین‌المللی</h3>
+            <p>
+              این بوم سه‌بعدی با Babylon.js ساخته شده است. اگر در Blender یا Unity مدل GLB طراحی کنید،
+              می‌توانید آن را در پوشه <code>assets/models</code> قرار دهید و طبق توضیحات README به صحنه اضافه کنید.
+            </p>
+          </div>
+          <div class="babylon-wrap">
+            <canvas id="babylonStage" aria-label="صحنه سه‌بعدی مدارک مامایی"></canvas>
+            <div class="canvas-caption">با موس/لمس بچرخانید</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- بخش وبلاگ بیماری‌ها و راهکارهای درمانی -->
+    <section class="section blog" id="blog">
+      <div class="container">
+        <div class="blog-hero reveal">
+          <div>
+            <div class="section-kicker">وبلاگ سلامت مادر</div>
+            <h2>بیماری‌های رایج، علائم مهم و مسیرهای درمان ایمن</h2>
+            <p>
+              فیلتر کنید، جستجو کنید و مقاله‌های نمونه را برای سایت خواهر خود تغییر دهید.
+              درمان‌ها فقط برای آموزش هستند و باید با نظر پزشک/ماما انجام شوند.
+            </p>
+          </div>
+          <img src="./assets/images/degrees-abroad.png" alt="تصویر هوش مصنوعی از مدارک و آموزش بین‌المللی مامایی" />
+        </div>
+
+        <!-- بخش ابزار فیلتر و جستجوی وبلاگ -->
+        <div class="blog-tools reveal" aria-label="ابزار جستجوی وبلاگ">
+          <div class="filter-buttons" id="filterButtons">
+            <button class="chip active" type="button" data-filter="all">همه</button>
+            <button class="chip" type="button" data-filter="بارداری">بارداری</button>
+            <button class="chip" type="button" data-filter="باروری">باروری</button>
+            <button class="chip" type="button" data-filter="شیردهی">شیردهی</button>
+            <button class="chip" type="button" data-filter="هشدار">علائم هشدار</button>
+          </div>
+          <label class="search-box" for="blogSearch">
+            <span>جستجو</span>
+            <input id="blogSearch" type="search" placeholder="مثلاً دیابت، ناباروری، فشار خون..." />
+          </label>
+        </div>
+
+        <!-- بخش کارت‌های وبلاگ: با JavaScript از آرایه BLOG_POSTS ساخته می‌شود -->
+        <div class="blog-grid" id="blogGrid" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <!-- بخش فروش دوره آموزشی ناباروری -->
+    <section class="section course" id="course">
+      <div class="container course-card reveal">
+        <!-- بخش تصویر دوره -->
+        <div class="course-media">
+          <img src="./assets/images/fertility-course.png" alt="تصویر هوش مصنوعی برای دوره درمان مشکل ناباروری" />
+          <div class="course-badge">دوره ویژه</div>
+        </div>
+
+        <!-- بخش توضیحات و فروش دوره -->
+        <div class="course-copy">
+          <div class="section-kicker">فروش دوره</div>
+          <h2 id="courseTitle">درمان مشکل ناباروری با دکتر ارشدی زاده</h2>
+          <p id="courseDescription">
+            یک دوره آموزشی مرحله‌به‌مرحله برای آشنایی با ارزیابی ناباروری، آزمایش‌های اولیه، سبک زندگی، زمان‌بندی مراجعه و مسیرهای درمانی رایج.
+          </p>
+
+          <div class="course-list">
+            <div>ویدئوهای آموزشی کوتاه و کاربردی</div>
+            <div>چک‌لیست پیگیری آزمایش‌ها و زمان تخمک‌گذاری</div>
+            <div>وبینار پرسش و پاسخ ماهانه</div>
+            <div>مناسب زوج‌هایی که می‌خواهند با آگاهی بیشتری مسیر درمان را شروع کنند</div>
+          </div>
+
+          <div class="price-row">
+            <div>
+              <span>قیمت شروع</span>
+              <strong id="coursePrice">۳,۸۰۰,۰۰۰ تومان</strong>
+            </div>
+            <button class="btn btn-primary" id="openCourseModal" type="button">ثبت‌نام و دریافت مشاوره</button>
+          </div>
+          <p class="fine-print">
+            توجه: این دوره جایگزین مراجعه حضوری، تشخیص یا درمان پزشکی نیست و نتیجه درمان ناباروری برای همه افراد یکسان یا تضمینی نیست.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- بخش پرسش‌های متداول کوتاه -->
+    <section class="section faq" id="faq">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div class="section-kicker">پرسش‌های پرتکرار</div>
+          <h2>قبل از ثبت‌نام چه بدانم؟</h2>
+        </div>
+        <div class="faq-grid reveal">
+          <details>
+            <summary>آیا دوره برای همه زوج‌ها مناسب است؟</summary>
+            <p>دوره آموزشی است و به درک مسیر درمان کمک می‌کند؛ اما تشخیص و درمان باید بر اساس پرونده پزشکی هر زوج انجام شود.</p>
+          </details>
+          <details>
+            <summary>آیا در سایت می‌توانم مقاله‌های بیشتری اضافه کنم؟</summary>
+            <p>بله. کافی است در فایل <code>js/app.js</code> یک آیتم جدید به آرایه <code>BLOG_POSTS</code> اضافه کنید.</p>
+          </details>
+          <details>
+            <summary>مدل Blender یا Unity چطور اضافه می‌شود؟</summary>
+            <p>مدل را با فرمت GLB/GLTF خروجی بگیرید، در <code>assets/models</code> قرار دهید و کد لودر را طبق README فعال کنید.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- بخش تماس، آدرس مطب و ایمیل -->
+    <section class="section contact" id="contact">
+      <div class="container contact-grid">
+        <!-- بخش اطلاعات تماس نمونه -->
+        <div class="contact-info reveal">
+          <div class="section-kicker">تماس با مطب</div>
+          <h2>برای مشاوره مامایی و دوره ناباروری</h2>
+          <p>اطلاعات زیر نمونه است و می‌توانید از فایل <code>js/app.js</code> تغییر دهید.</p>
+          <div class="contact-cards">
+            <div class="contact-card">
+              <span>تلفن</span>
+              <strong id="contactPhone">۰۲۱-۲۲۴۴-۸۸۷۶</strong>
+            </div>
+            <div class="contact-card">
+              <span>ایمیل</span>
+              <strong id="contactEmail">info@arshida-midwife.ir</strong>
+            </div>
+            <div class="contact-card">
+              <span>آدرس</span>
+              <strong id="contactAddress">تهران، خیابان شریعتی، بالاتر از میرداماد، پلاک ۲۷، واحد ۴</strong>
+            </div>
+            <div class="contact-card">
+              <span>ساعات کاری</span>
+              <strong id="contactHours">شنبه تا چهارشنبه، ۱۰ تا ۱۸</strong>
+            </div>
+          </div>
+        </div>
+
+        <!-- بخش فرم تماس نمایشی -->
+        <form class="contact-form reveal" id="contactForm" data-delay="120">
+          <h3>درخواست تماس</h3>
+          <label>
+            نام و نام خانوادگی
+            <input type="text" name="name" placeholder="مثلاً نرگس احمدی" required />
+          </label>
+          <label>
+            شماره موبایل
+            <input type="tel" name="phone" placeholder="۰۹۱۲..." required />
+          </label>
+          <label>
+            موضوع
+            <select name="topic">
+              <option>مشاوره بارداری</option>
+              <option>سؤال درباره دوره ناباروری</option>
+              <option>مشاوره شیردهی</option>
+              <option>سایر موارد</option>
+            </select>
+          </label>
+          <label>
+            پیام کوتاه
+            <textarea name="message" rows="4" placeholder="پیام شما..."></textarea>
+          </label>
+          <button class="btn btn-primary" type="submit">ارسال درخواست</button>
+          <p class="form-note">این فرم نمایشی است؛ برای اتصال واقعی باید بک‌اند یا سرویس ایمیل اضافه شود.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- بخش فوتر سایت -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <strong>کلینیک مامایی آرشیدا</strong>
+        <p>وب‌سایت مینیمال سه‌بعدی با JavaScript، Three.js و Babylon.js.</p>
+      </div>
+      <div class="footer-links">
+        <a href="#home">خانه</a>
+        <a href="#degrees">مدارک</a>
+        <a href="#blog">وبلاگ</a>
+        <a href="#course">دوره</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- بخش مودال ثبت‌نام دوره -->
+  <div class="modal-backdrop" id="courseModal" hidden>
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal-close" id="closeCourseModal" type="button" aria-label="بستن پنجره">×</button>
+      <h3 id="modalTitle">ثبت‌نام دوره درمان مشکل ناباروری</h3>
+      <p>برای نسخه واقعی، این بخش به درگاه پرداخت و سیستم CRM/ایمیل متصل می‌شود.</p>
+      <div class="modal-actions">
+        <a class="btn btn-primary" href="mailto:info@arshida-midwife.ir?subject=ثبت نام دوره ناباروری">ارسال ایمیل ثبت‌نام</a>
+        <a class="btn btn-ghost" href="tel:+982122448876">تماس با مطب</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- کتابخانه Three.js محلی: برای بخش هیرو سه‌بعدی -->
+  <script src="./vendor/three.min.js"></script>
+  <!-- کتابخانه Babylon.js محلی: برای بخش صحنه مدارک بین‌المللی -->
+  <script src="./vendor/babylon.js"></script>
+  <!-- فایل اصلی جاوااسکریپت سایت: همه محتواهای قابل ویرایش اینجاست -->
+  <script src="./js/app.js"></script>
+</body>
+</html>
